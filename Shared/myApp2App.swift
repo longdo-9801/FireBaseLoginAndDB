@@ -15,7 +15,7 @@ struct myApp2App: App {
     }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

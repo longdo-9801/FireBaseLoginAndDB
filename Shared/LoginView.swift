@@ -8,11 +8,14 @@
 import SwiftUI
 import FirebaseAuth
 
-struct ContentView: View {
+struct LoginView: View {
     @State var email: String = ""
     @State var password: String = ""
+    @State var name: String = ""
     @State var isLogin: Bool = false
     @State var showSignUp: Bool = false
+    @StateObject var centralUserManager : UserManager = UserManager(user: nil)
+    //@State var ActiveUser: UserData? = nil
     
     func login() {
         Auth.auth().signIn(withEmail: email, password: password) {
@@ -26,7 +29,6 @@ struct ContentView: View {
             }
         }
     }
-    
     var body: some View {
         VStack {
             if isLogin {
@@ -36,7 +38,7 @@ struct ContentView: View {
                 
                 // Login fields to sign in
                 Group {
-                    TextField("Email", text: $email)
+                    TextField("Email", text: $email)                .textInputAutocapitalization(.never)
                     SecureField("Password", text: $password)
                 }
 
@@ -65,7 +67,7 @@ struct ContentView: View {
                 }
                 .padding()
                 .sheet(isPresented: $showSignUp) {
-                        SignInView()
+                        SignUpView()
                 }
 
              }
@@ -75,6 +77,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }

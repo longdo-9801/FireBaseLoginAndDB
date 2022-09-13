@@ -8,14 +8,19 @@
 import SwiftUI
 import FirebaseAuth
 
-struct SignInView: View {
+struct SignUpView: View {
 @Environment(\.dismiss) var dismiss
 
-@State var email = ""
-@State var password = ""
-@State var passwordConfirmation = ""
+    @State var email = ""
+    @State var name = ""
+    @State var password = ""
+    @State var passwordConfirmation = ""
 
-@State var signUpSuccess = false
+    @State var signUpSuccess = false
+    
+    @EnvironmentObject var userManager: UserManager
+    
+    
     // Sign up function to use Firebase to create a new user account in Firebase
     func signUp() {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
@@ -25,6 +30,7 @@ struct SignInView: View {
             } else {
                 print("success")
                 signUpSuccess = true
+                userManager.addNewUser(name: name, email: email)
             }
         }
     }
@@ -37,6 +43,10 @@ var body: some View {
         Group {
             TextField("Email", text: $email)
                 .padding()
+                .background(.thinMaterial)
+                .cornerRadius(10)
+                .textInputAutocapitalization(.never)
+            TextField("UserName", text: $name)                .padding()
                 .background(.thinMaterial)
                 .cornerRadius(10)
                 .textInputAutocapitalization(.never)
@@ -87,6 +97,6 @@ var body: some View {
 }
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignUpView().environmentObject(UserManager(user: nil))
     }
 }

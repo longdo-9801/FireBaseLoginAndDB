@@ -11,30 +11,34 @@
 		3D2412CD28CF3A7400BAD01C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3D2412CC28CF3A7400BAD01C /* FirebaseFirestore */; };
 		3D2412CF28CF3A7400BAD01C /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3D2412CE28CF3A7400BAD01C /* FirebaseFirestoreCombine-Community */; };
 		3D2412D128CF3A7400BAD01C /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3D2412D028CF3A7400BAD01C /* FirebaseFirestoreSwift-Beta */; };
-		3D2412D328CF3E5100BAD01C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2412D228CF3E5100BAD01C /* SignInView.swift */; };
-		3D2412D428CF3E5100BAD01C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2412D228CF3E5100BAD01C /* SignInView.swift */; };
+		3D2412D328CF3E5100BAD01C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2412D228CF3E5100BAD01C /* SignUpView.swift */; };
+		3D2412D428CF3E5100BAD01C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2412D228CF3E5100BAD01C /* SignUpView.swift */; };
 		3D2412D628CF476E00BAD01C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2412D528CF476E00BAD01C /* WelcomeView.swift */; };
 		3D2412D728CF476E00BAD01C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2412D528CF476E00BAD01C /* WelcomeView.swift */; };
 		3D5DD79928CF293900D66A7C /* myApp2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DD78928CF293800D66A7C /* myApp2App.swift */; };
 		3D5DD79A28CF293900D66A7C /* myApp2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DD78928CF293800D66A7C /* myApp2App.swift */; };
-		3D5DD79B28CF293900D66A7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DD78A28CF293800D66A7C /* ContentView.swift */; };
-		3D5DD79C28CF293900D66A7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DD78A28CF293800D66A7C /* ContentView.swift */; };
+		3D5DD79B28CF293900D66A7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DD78A28CF293800D66A7C /* LoginView.swift */; };
+		3D5DD79C28CF293900D66A7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DD78A28CF293800D66A7C /* LoginView.swift */; };
 		3D5DD79D28CF293900D66A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DD78B28CF293900D66A7C /* Assets.xcassets */; };
 		3D5DD79E28CF293900D66A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DD78B28CF293900D66A7C /* Assets.xcassets */; };
 		3D5DD7A828CF29B800D66A7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DD7A728CF29B800D66A7C /* GoogleService-Info.plist */; };
 		3D5DD7A928CF29B800D66A7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DD7A728CF29B800D66A7C /* GoogleService-Info.plist */; };
+		3D8EE85F28D044C30002E3E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8EE85E28D044C30002E3E8 /* User.swift */; };
+		3D8EE86228D049EF0002E3E8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8EE86128D049EF0002E3E8 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D2412D228CF3E5100BAD01C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3D2412D228CF3E5100BAD01C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3D2412D528CF476E00BAD01C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3D5DD78928CF293800D66A7C /* myApp2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myApp2App.swift; sourceTree = "<group>"; };
-		3D5DD78A28CF293800D66A7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D5DD78A28CF293800D66A7C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3D5DD78B28CF293900D66A7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5DD79028CF293900D66A7C /* myApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5DD79628CF293900D66A7C /* myApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5DD79828CF293900D66A7C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		3D5DD7A728CF29B800D66A7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D8EE85E28D044C30002E3E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3D8EE86128D049EF0002E3E8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +75,12 @@
 		3D5DD78828CF293800D66A7C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3D8EE86028D049E30002E3E8 /* Controller */,
+				3D8EE85D28D044B50002E3E8 /* Model */,
 				3D5DD7A728CF29B800D66A7C /* GoogleService-Info.plist */,
 				3D5DD78928CF293800D66A7C /* myApp2App.swift */,
-				3D5DD78A28CF293800D66A7C /* ContentView.swift */,
-				3D2412D228CF3E5100BAD01C /* SignInView.swift */,
+				3D5DD78A28CF293800D66A7C /* LoginView.swift */,
+				3D2412D228CF3E5100BAD01C /* SignUpView.swift */,
 				3D5DD78B28CF293900D66A7C /* Assets.xcassets */,
 				3D2412D528CF476E00BAD01C /* WelcomeView.swift */,
 			);
@@ -96,6 +102,22 @@
 				3D5DD79828CF293900D66A7C /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		3D8EE85D28D044B50002E3E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D8EE85E28D044C30002E3E8 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D8EE86028D049E30002E3E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D8EE86128D049EF0002E3E8 /* UserManager.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2412D328CF3E5100BAD01C /* SignInView.swift in Sources */,
-				3D5DD79B28CF293900D66A7C /* ContentView.swift in Sources */,
+				3D8EE86228D049EF0002E3E8 /* UserManager.swift in Sources */,
+				3D2412D328CF3E5100BAD01C /* SignUpView.swift in Sources */,
+				3D5DD79B28CF293900D66A7C /* LoginView.swift in Sources */,
 				3D5DD79928CF293900D66A7C /* myApp2App.swift in Sources */,
+				3D8EE85F28D044C30002E3E8 /* User.swift in Sources */,
 				3D2412D628CF476E00BAD01C /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,8 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2412D428CF3E5100BAD01C /* SignInView.swift in Sources */,
-				3D5DD79C28CF293900D66A7C /* ContentView.swift in Sources */,
+				3D2412D428CF3E5100BAD01C /* SignUpView.swift in Sources */,
+				3D5DD79C28CF293900D66A7C /* LoginView.swift in Sources */,
 				3D5DD79A28CF293900D66A7C /* myApp2App.swift in Sources */,
 				3D2412D728CF476E00BAD01C /* WelcomeView.swift in Sources */,
 			);
