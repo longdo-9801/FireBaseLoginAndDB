@@ -9,8 +9,10 @@ import SwiftUI
 import FirebaseAuth
 
 struct LoginView: View {
-    @State var email: String = ""
-    @State var password: String = ""
+//    @State var email: String = ""
+//    @State var password: String = ""
+    @State var email: String = "c@test.com"
+    @State var password: String = "123456"
     @State var name: String = ""
     @State var isLogin: Bool = false
     @State var showSignUp: Bool = false
@@ -26,6 +28,8 @@ struct LoginView: View {
             } else {
                 print("Success")
                 centralUserManager.setActiveUser(email: email)
+                print("debug array 2")
+                dump(centralUserManager.user?.orderHistory)
                 isLogin = true
             }
         }

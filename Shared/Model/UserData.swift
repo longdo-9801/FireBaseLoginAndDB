@@ -13,7 +13,7 @@ struct UserData {
     var icon : String
     var walletBalance: Int
     var orderHistory : Array<String> = []
-    init(userName: String, email: String, balance: Int, orderHist: [String]) {
+    init(userName: String, email: String, balance: Int, orderHist: Array<String>) {
         self.name = userName
         self.email = email
         self.walletBalance = balance

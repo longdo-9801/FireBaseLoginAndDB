@@ -17,6 +17,8 @@ struct WelcomeView: View {
     
     func getOrderList() {
         let orderDB = Firestore.firestore()
+        print("debug array")
+        dump(centralUserManager.user?.orderHistory ?? ["EMPTY"])
         for orderID in centralUserManager.user?.orderHistory ?? [] {
             orderDB.collection("order").document(orderID).getDocument() {
                 (querySnapshot, err) in
@@ -36,9 +38,12 @@ struct WelcomeView: View {
         VStack {
             Text("Login Successfully! ✅")
                 .foregroundColor(.green).onAppear(){
+                    print("Debug UM")
+                    //dump(centralUserManager)
+                    dump(centralUserManager.user)
                     dump(orderList)
                     getOrderList()
-                    dump(orderList)
+                    
                 }
             Text("Welcome \(centralUserManager.user?.name ?? "NamelessOne")")
             Button {} label: {
