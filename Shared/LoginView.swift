@@ -11,7 +11,7 @@ import FirebaseAuth
 struct LoginView: View {
 //    @State var email: String = ""
 //    @State var password: String = ""
-    @State var email: String = "c@test.com"
+    @State var email: String = "b@test.com"
     @State var password: String = "123456"
     @State var name: String = ""
     @State var isLogin: Bool = false
@@ -27,9 +27,6 @@ struct LoginView: View {
                 isLogin = false
             } else {
                 print("Success")
-                centralUserManager.setActiveUser(email: email)
-                print("debug array 2")
-                dump(centralUserManager.user?.orderHistory)
                 isLogin = true
             }
         }
@@ -37,7 +34,7 @@ struct LoginView: View {
     var body: some View {
         VStack {
             if isLogin {
-                WelcomeView().environmentObject(centralUserManager)
+                WelcomeView(email: email).environmentObject(centralUserManager)
             } else {
                 Spacer()
                 
