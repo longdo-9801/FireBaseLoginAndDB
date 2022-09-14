@@ -10,5 +10,10 @@ import Foundation
 struct UserData {
     var name : String
     var email : String
-    var icon : String = "A6MProfile"
+    var icon : String
+    init(userName: String, email: String) {
+        self.name = userName
+        self.email = email
+        icon = "A6MProfile"
+    }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     @State var username: String = ""
     @State var email: String = ""
-    @EnvironmentObject var User : UserManager
+    @EnvironmentObject var centralUserManager : UserManager
     
     
     func getUserName() {
@@ -21,9 +21,7 @@ struct WelcomeView: View {
         VStack {
             Text("Login Successfully! ✅")
             .foregroundColor(.green)
-            Text("Welcome \(User.user?.name ?? "NamelessOne")").onAppear(){
-                print("DEBUG")
-            }
+            Text("Welcome \(centralUserManager.user?.name ?? "NamelessOne")")
         }
     }
 }

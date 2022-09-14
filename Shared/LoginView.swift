@@ -25,6 +25,7 @@ struct LoginView: View {
                 isLogin = false
             } else {
                 print("Success")
+                centralUserManager.setActiveUser(email: email)
                 isLogin = true
             }
         }
@@ -32,7 +33,7 @@ struct LoginView: View {
     var body: some View {
         VStack {
             if isLogin {
-                WelcomeView()
+                WelcomeView().environmentObject(centralUserManager)
             } else {
                 Spacer()
                 

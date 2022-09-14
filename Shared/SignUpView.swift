@@ -18,7 +18,7 @@ struct SignUpView: View {
 
     @State var signUpSuccess = false
     
-    @EnvironmentObject var userManager: UserManager
+    @EnvironmentObject var centralUserManager: UserManager
     
     
     // Sign up function to use Firebase to create a new user account in Firebase
@@ -30,7 +30,7 @@ struct SignUpView: View {
             } else {
                 print("success")
                 signUpSuccess = true
-                userManager.addNewUser(name: name, email: email)
+                centralUserManager.addNewUser(name: name, email: email)
             }
         }
     }
