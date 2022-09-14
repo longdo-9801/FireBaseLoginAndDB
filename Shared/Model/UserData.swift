@@ -11,9 +11,13 @@ struct UserData {
     var name : String
     var email : String
     var icon : String
-    init(userName: String, email: String) {
+    var walletBalance: Int
+    var orderHistory : Array<String> = []
+    init(userName: String, email: String, balance: Int, orderHist: [String]) {
         self.name = userName
         self.email = email
+        self.walletBalance = balance
+        self.orderHistory = orderHist
         icon = "A6MProfile"
     }
 }
