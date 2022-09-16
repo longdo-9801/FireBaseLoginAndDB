@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseFirestore
 
 struct WelcomeView: View {
-    @State var username: String = ""
+    @State var username: String = "M"
     @State var email: String = ""
     @State var orderList: Array<Order> = []
     @State var viewForceUpdater: Int = 0
@@ -43,19 +43,21 @@ struct WelcomeView: View {
     
     var body: some View {
         VStack {
+            RoundView(icon: Image("A6MProfile"))
+            RoundViewDynamic(name: $username)
             Text("Login Successfully! ✅")
                 .foregroundColor(.green).onAppear(){
                     print("Debug UM")
                     centralUserManager.setActiveUser(email: email) {
-                        dump(centralUserManager.user)
-                        dump(orderList)
+                        username = centralUserManager.user?.name ?? "NamelessOne"
+                        print("DEBUG USERNAME: \(username)")
                         getOrderList()
                       }
                     //dump(centralUserManager)
 
                     
                 }
-            Text("Welcome \(centralUserManager.user?.name ?? "NamelessOne")")
+            Text("Welcome \(username)")
             Button {
                 DEBUG_addOrder()
                 centralUserManager.setActiveUser(email: email) {

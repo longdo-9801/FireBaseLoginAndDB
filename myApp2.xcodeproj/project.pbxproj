@@ -31,6 +31,10 @@
 		3D5DD79E28CF293900D66A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DD78B28CF293900D66A7C /* Assets.xcassets */; };
 		3D5DD7A828CF29B800D66A7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DD7A728CF29B800D66A7C /* GoogleService-Info.plist */; };
 		3D5DD7A928CF29B800D66A7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DD7A728CF29B800D66A7C /* GoogleService-Info.plist */; };
+		3D7BE55228D447A800F8F1BE /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BE55128D447A800F8F1BE /* RoundView.swift */; };
+		3D7BE55328D447A800F8F1BE /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BE55128D447A800F8F1BE /* RoundView.swift */; };
+		3D7BE55528D447B000F8F1BE /* RoundViewDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BE55428D447B000F8F1BE /* RoundViewDynamic.swift */; };
+		3D7BE55628D447B000F8F1BE /* RoundViewDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BE55428D447B000F8F1BE /* RoundViewDynamic.swift */; };
 		3D8EE86228D049EF0002E3E8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8EE86128D049EF0002E3E8 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,8 @@
 		3D5DD79628CF293900D66A7C /* myApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5DD79828CF293900D66A7C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		3D5DD7A728CF29B800D66A7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D7BE55128D447A800F8F1BE /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		3D7BE55428D447B000F8F1BE /* RoundViewDynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundViewDynamic.swift; sourceTree = "<group>"; };
 		3D8EE86128D049EF0002E3E8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +102,8 @@
 				3D2D056728D19B0E0015B758 /* AccountView.swift */,
 				3D2412D528CF476E00BAD01C /* WelcomeView.swift */,
 				3D5DD78B28CF293900D66A7C /* Assets.xcassets */,
+				3D7BE55128D447A800F8F1BE /* RoundView.swift */,
+				3D7BE55428D447B000F8F1BE /* RoundViewDynamic.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -245,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7BE55528D447B000F8F1BE /* RoundViewDynamic.swift in Sources */,
 				3D8EE86228D049EF0002E3E8 /* UserManager.swift in Sources */,
 				3D2412D328CF3E5100BAD01C /* SignUpView.swift in Sources */,
 				3D2D056B28D1A2690015B758 /* Order.swift in Sources */,
@@ -254,6 +263,7 @@
 				3D2D056828D19B0E0015B758 /* AccountView.swift in Sources */,
 				3D5DD79928CF293900D66A7C /* myApp2App.swift in Sources */,
 				3D2412D628CF476E00BAD01C /* WelcomeView.swift in Sources */,
+				3D7BE55228D447A800F8F1BE /* RoundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +273,11 @@
 			files = (
 				3D2D056C28D1A2690015B758 /* Order.swift in Sources */,
 				3D2412D428CF3E5100BAD01C /* SignUpView.swift in Sources */,
+				3D7BE55628D447B000F8F1BE /* RoundViewDynamic.swift in Sources */,
 				3D5DD79C28CF293900D66A7C /* LoginView.swift in Sources */,
 				3D2D056F28D1AC340015B758 /* TableView.swift in Sources */,
 				3D5DD79A28CF293900D66A7C /* myApp2App.swift in Sources */,
+				3D7BE55328D447A800F8F1BE /* RoundView.swift in Sources */,
 				3D2412D728CF476E00BAD01C /* WelcomeView.swift in Sources */,
 				3D2D056928D19B0E0015B758 /* AccountView.swift in Sources */,
 			);
