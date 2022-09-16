@@ -12,7 +12,7 @@ struct RoundViewDynamic: View {
     
     var body: some View {
         ZStack {
-            Circle().fill(Color.mint).frame(width: 70, height: 50, alignment: .center)
+            Circle().fill(Color.mint).frame(width: 80, height: 80, alignment: .center)
                 .overlay(Circle().stroke(Color.black,lineWidth: 4)).shadow(radius: 10)
             Text(String(name.prefix(1).uppercased()))
                 .font(.system(size: 50)).foregroundColor(Color.white)

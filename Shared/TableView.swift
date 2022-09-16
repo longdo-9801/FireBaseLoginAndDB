@@ -12,7 +12,7 @@ struct TableView : View {
     let content: String
     
     var body: some View {
-        Rectangle().fill(Color.white)
+        RoundedRectangle(cornerRadius: 100).fill(Color.white)
             .frame(width: 300, height: 50.0)
             .overlay( HStack{
                 Spacer()
@@ -21,8 +21,7 @@ struct TableView : View {
                 Text(content)
                 Spacer()
             }
-            )
-    }
+            )    }
 }
 
 struct TableViewPreview: PreviewProvider {
